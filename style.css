@@ -1,0 +1,871 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Serif Pro', serif !important;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/* Header */
+
+header .container {
+    background-image: url(img/cloudImg.jpg);
+    margin-top: 0.5px;
+    border-top: 2px solid #262626;
+    border-right: 2px solid #262626;
+    border-left: 2px solid #262626;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    color: black;
+    display: none;
+}
+
+header .container .sosyalMedya{
+    float: left;
+}
+
+header .container .sosyalMedya:hover{
+    float: left;
+}
+
+header .container .sosyalMedya a{
+    font-size: 1.3rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+header .container .sosyalMedya a:hover{
+    opacity: 0.6;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+header .container .iletişim{
+    font-size: 1.3rem;
+    font-weight: 500;
+    float: right;
+    margin-right: 30px;
+}
+
+header .container .iletişim a{
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+header .container .iletişim .telefon{
+    margin-right: 15px;
+    cursor:default;
+}
+
+/* Header media queries*/
+
+@media screen and (max-width: 1200px) {
+    header .container .iletişim{
+        font-size: 1.1rem;
+    }
+
+    header .container .sosyalMedya a{
+        font-size: 1.1rem;
+    }
+  }
+  
+@media screen and (max-width: 1000px) {
+    header .container .iletişim{
+        font-size: 0.9rem;
+    }
+
+    header .container .sosyalMedya a{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .container .iletişim{
+        margin-right: 20px;
+        padding-top: 3.5px;
+        font-size: 0.7rem;
+    }
+
+    header .container .sosyalMedya a{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .container .iletişim{
+        font-size: 0.6rem;
+        padding-top: 5.8px;
+    }
+
+    header .container .sosyalMedya a{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    header .container .iletişim{
+        margin-right: 4px;
+        padding-top: 5.8px;
+    }
+
+    header .container .sosyalMedya a{
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    header .container .iletişim{
+        margin-right: 1px;
+        padding-top: 6px;
+    }
+
+    header .container .sosyalMedya a{
+        margin-left: 0.2rem;
+    }
+}
+/* Slider Resim*/
+
+
+/* Navbar */
+.navbar {
+    background-color: #262626;
+}
+
+nav #logo-box{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    color: #d9d9d9; 
+}
+
+nav #logo-box a img{
+    margin-bottom: 0.2rem;
+}
+
+nav .navbar-nav .nav-item{
+    margin-right: 4rem;
+}
+
+nav .navbar-nav .nav-item .nav-link{
+    color: #d9d9d9;
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    position: relative;
+}
+
+nav .navbar-nav .nav-item .nav-link::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover::before{
+    width: 100%;
+}
+
+nav .navbar-nav .nav-link:hover{
+    opacity: 0.8;
+}
+
+nav .navbar-collapse .dropdown-item:hover {
+    background-color: #999999;
+    color: white;
+}
+
+nav .navbar-nav .btnRand{
+    background-color: white;
+    color: black !important;
+    border-radius: 9px;
+    transition: background-color .8s, color .8s;
+}
+
+nav .navbar-nav .btnRand::before{
+    content: ''!important;
+    width: 0!important;
+}
+
+nav .navbar-nav .btnRand:hover{
+    color: white !important;
+    background-color: #992600;
+    opacity: 1;
+}
+
+nav .navbar-toggler {
+    margin-top: auto; 
+}
+
+/* Navbar media queries*/
+
+@media screen and (max-width: 1406px) {
+    nav #logo-box{
+        margin-left: 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    nav .navbar-nav .nav-item .nav-link{
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    nav .navbar-nav .nav-item{
+        margin-right: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    nav #logo-box{
+        margin-left: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    nav .navbar-nav .nav-item .nav-link{
+        font-size: 1rem;
+    }
+
+    nav .navbar-nav .nav-item{
+        margin-right: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 1097px) {
+    nav #logo-box{
+        margin-left: 1.3rem;
+        font-size: 1rem;
+    }
+
+    nav .navbar-nav .nav-item .nav-link{
+        font-size: 0.9rem;
+    }
+
+    nav .navbar-nav .nav-item{
+        margin-right: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 352px) {
+    nav #logo-box{
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+  }
+
+/* Hakkımda */
+
+.hakkimda {
+    background-color: #f2f2f2;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hakkimda .container .baslik h1 {
+    margin-bottom: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.hakkimda .container .col-md-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.hakkimda .container .col-md-9 {
+    margin: 0;
+    padding: 0;
+}
+
+.hakkimda .col-md-3 .hakkımdaImage img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.hakkimda .col-xs-12 .hakkımdaText {
+    padding: 1rem;
+    text-align: justify;
+    background-color: white;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+}
+
+/* Hakkımda media queries*/
+
+@media screen and (max-width: 991px) {
+
+    .hakkimda .container .baslik h1 {
+        margin-bottom: 3rem;
+        letter-spacing: 2.5px;
+        font-size: 2.3rem;
+    }
+
+    .hakkimda .col-xs-12 .hakkımdaText {
+        font-size: .9rem;
+        letter-spacing: 1.3px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hakkimda .container .baslik h1 {
+        margin-bottom: 2.5rem;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    .hakkimda .col-md-3 .hakkımdaImage img {
+        width: 75%;
+        max-width: 75%;
+    }
+
+    .hakkimda .col-xs-12 .hakkımdaText {
+        font-size: .8rem;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .hakkimda .container .baslik h1 {
+        margin-bottom: 2rem;
+        letter-spacing: 1.5px;
+        font-size: 1.8rem;
+    }
+
+    .hakkimda .col-md-3 .hakkımdaImage img {
+        width: 35%;
+        max-width: 35%;
+    }
+
+    .hakkimda .col-xs-12 .hakkımdaText {
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+
+    .hakkimda .container .baslik h1 {
+        margin-bottom: 1.5rem;
+        letter-spacing: 1.3px;
+        font-size: 1.6rem;
+    }
+
+    .hakkimda .col-md-3 .hakkımdaImage img {
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .hakkimda .col-xs-12 .hakkımdaText {
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Hizmetler */
+
+.hizmetlerimiz {
+    background-image: url(img/hizmetBackgroundImg.jpg);
+    padding: 4rem;
+}
+
+.hizmetlerimiz .container{
+    background-color: rgb(13, 13, 13,0.7);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hizmetlerimiz h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align:justify;
+    margin-bottom: 4rem;
+}
+
+.hizmetlerimiz .list-group .list-group-item {
+    font-weight: 700;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.hizmetlerimiz .list-group .list-group-item.active {
+    background-color: #992600;
+    color: white;
+    border: none;
+}
+
+.hizmetlerimiz .list-group .list-group-item:hover {
+    background-color: #992600;
+    color: white;
+    border: none;
+}
+
+.hizmetlerimiz .tab-content .tab-pane {
+    text-align: justify;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Hizmetlerimiz media queries*/
+
+@media screen and (max-width: 1199px) {
+    .hizmetlerimiz h2 {
+        font-size: 2.3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .hizmetlerimiz .list-group .list-group-item {
+        font-size: .9rem;
+    }
+    
+    .hizmetlerimiz .tab-content .tab-pane {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hizmetlerimiz h2 {
+        font-size: 2.1rem;
+        margin-bottom: 3rem;
+    }
+
+    .hizmetlerimiz .list-group .list-group-item {
+        font-size: .8rem;
+    }
+    
+    .hizmetlerimiz .tab-content .tab-pane {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hizmetlerimiz h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hizmetlerimiz .list-group .list-group-item {
+        font-size: .8rem;
+    }
+    
+    .hizmetlerimiz .tab-content .tab-pane {
+        margin-top: 2rem;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hizmetlerimiz h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .hizmetlerimiz .list-group .list-group-item {
+        font-size: .8rem;
+    }
+    
+    .hizmetlerimiz .tab-content .tab-pane {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .hizmetlerimiz h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .hizmetlerimiz .list-group .list-group-item {
+        font-size: .7rem;
+    }
+    
+    .hizmetlerimiz .tab-content .tab-pane {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .hizmetlerimiz h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hizmetlerimiz h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hizmetlerimiz .list-group .list-group-item {
+        font-size: .6rem;
+    }
+    
+    .hizmetlerimiz .tab-content .tab-pane {
+        font-size: .6rem;
+    }
+}
+/* Kitaplar */
+
+.kitaplar {
+    padding: 4rem;
+}
+
+.kitaplar .container .baslik h1 {
+    margin-bottom: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.kitaplar .container .row .col-lg-3 {
+    margin-bottom: 1rem;
+}
+
+.kitaplar .container .row .col-lg-3 .modal .modal-body{
+    padding: 0;
+}
+
+.kitaplar .container .row .col-lg-3 .modal .modal-body button{
+    padding: 5px;
+}
+
+/* Kitaplar media queries*/
+
+@media screen and (max-width: 1199px) {
+    .kitaplar .container .baslik h1 {
+        font-size: 2.3rem;
+        margin-bottom: 3.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .kitaplar .container .baslik h1 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .kitaplar .container .baslik h1 {
+        font-size: 1.9rem;
+        margin-bottom: 2.5rem;
+        letter-spacing: 1.3px;
+    }
+}
+
+/* randevu */
+
+.randevu {
+    background-image: url(img/randevuImg.png);
+    padding: 4rem;
+}
+
+.randevu .baslik h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.randevu form .form-group {
+    margin-bottom: 2rem;
+}
+
+.randevu form .form-group .form-control{
+    font-weight: bold;
+}
+
+.randevu form .form-group select option{
+   font-weight: bold;
+}
+
+
+.randevu form .contactBtn {
+    margin: auto;
+    display: inline-block;
+    color: #fff;
+    background-color: #992600;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: opacity 0.6s;
+}
+
+.randevu form .contactBtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.randevu .not {
+    margin-top: 3rem;
+    color: #fff;
+}
+
+.randevu .not p {
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.randevu .not ul li {
+    font-size: 1.1rem;
+}
+
+/* randevu media queries*/
+
+@media screen and (max-width: 1199px) {
+    .randevu .baslik h2{
+        font-size: 2.3rem;
+        margin-bottom: 3.5rem;
+        letter-spacing: 2.5px;
+    }
+    .randevu .not p {
+        font-size: 1.3rem;
+    }
+    .randevu .not ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .randevu .baslik h2{
+        font-size: 2.1rem;
+        margin-bottom: 3rem;
+        letter-spacing: 2px;
+    }
+    .randevu .not p {
+        font-size: 1.2rem;
+    }
+    .randevu .not ul li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .randevu .baslik h2{
+        font-size: 2rem;
+        margin-bottom: 2.7rem;
+        letter-spacing: 1.7px;
+    }
+    .randevu .not p {
+        font-size: 1.1rem;
+    }
+    .randevu .not ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .randevu .baslik h2{
+        font-size: 1.8rem;
+        margin-bottom: 2.1rem;
+        letter-spacing: 1.3px;
+    }
+    .randevu .not p {
+        font-size: 1rem;
+    }
+    .randevu .not ul li {
+        font-size: 0.8rem;
+    }
+}
+
+/* Footer */
+
+#footer {
+    /*background: linear-gradient(to left bottom, rgb(255, 255, 255), rgba(38, 38, 38, 0.9));*/
+    background-image: url(img/1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 3rem;
+}
+
+#footer .row .col-md-4 {
+    margin-bottom: 3rem;
+}
+
+#footer h2 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#footer .footerNav ul li{
+    margin-bottom: 1rem;
+    list-style:disc;
+}
+
+#footer .footerNav ul li a{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+}
+
+#footer .footerNav ul li a:hover{
+    opacity: 0.7;
+}
+
+#footer .footerIletisim ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+#footer .footerIletisim ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#footer .footerSosyalMedya button {
+    background-color: #fff;
+	width: 3.5rem;
+	padding: 13px;
+	margin: 5px;
+	border: 1px solid darkgray;
+	border-radius: 50%;
+}
+
+#footer .footerSosyalMedya button a{
+    font-size: 1.2rem;
+}
+
+#footer .footerSosyalMedya button:hover {
+    opacity: 0.6;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+#footer .copyright {
+    display: inline-block;
+    padding-top: 1rem;
+    font-weight: bold;
+    border-top: 2px solid black;
+}
+
+/* Footer media queries*/
+
+@media screen and (max-width: 1199px) {
+    #footer h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #footer .footerNav ul li a{
+        font-size: 1rem;
+    }
+
+    #footer .footerIletisim ul li a{
+        font-size: 1rem;
+    }
+
+    #footer .footerSosyalMedya button {
+        width: 3.2rem;
+        padding: 11px;
+        margin: 4.8px;
+    }
+
+    #footer .footerSosyalMedya button a{
+        font-size: 1.1rem;
+    }
+
+    #footer .copyright {
+        font-size: .9rem;
+        padding-top: .9rem;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    #footer h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #footer .footerNav ul li a{
+        font-size: .9rem;
+    }
+
+    #footer .footerIletisim ul li a{
+        font-size: .8rem;
+    }
+
+    #footer .footerSosyalMedya button {
+        width: 3rem;
+        padding: 9px;
+        margin: 4.5px;
+    }
+
+    #footer .footerSosyalMedya button a{
+        font-size: 1rem;
+    }
+
+    #footer .copyright {
+        font-size: .8rem;
+        padding-top: .8rem;
+    }
+  }
+
+/*BacktoTop Button*/
+
+#backToTopBtn {
+    display: inline-block;
+    background-color: rgb(13, 13, 13,0.7);
+    width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    color: #fff;
+  }
+  #backToTopBtn::after {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+  }
+  #backToTopBtn:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #backToTopBtn:active {
+    background-color: #555;
+  }
+  #backToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
